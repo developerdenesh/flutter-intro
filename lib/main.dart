@@ -16,13 +16,16 @@ class MyApp extends StatelessWidget {
           title: const Text('Learning flutter!'),
         ),
         body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: const [
-          Icon(Icons.backpack),
-          Icon(Icons.leaderboard),
-          Icon(Icons.person),
-        ]),
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: const [
+              Expanded(
+                flex: 4,
+                child: Icon(Icons.backpack),
+              ),
+              Icon(Icons.leaderboard),
+              Icon(Icons.person)
+            ]),
       ),
     );
   }
