@@ -5,14 +5,18 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({ Key? key }) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.green,
-        title: const Text('Learning flutter!'),
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+          title: const Text('Learning flutter!'),
+        ),
+        body: Container(
+          child: const Text('Hello Everyone'),
         ),
       ),
     );
