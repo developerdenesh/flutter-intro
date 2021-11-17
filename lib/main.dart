@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           title: const Text('Learning flutter!'),
         ),
-        body: Column(children: const [
+        body: Row(children: const [
           Icon(Icons.backpack),
           Icon(Icons.leaderboard),
           Icon(Icons.person),
