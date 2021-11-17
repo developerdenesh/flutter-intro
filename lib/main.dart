@@ -15,17 +15,14 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           title: const Text('Learning flutter!'),
         ),
-        body: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: const [
-              Expanded(
-                flex: 4,
-                child: Icon(Icons.backpack),
-              ),
-              Icon(Icons.leaderboard),
-              Icon(Icons.person)
-            ]),
+        body: Stack(children: [
+          Container(
+            color: Colors.red,
+            width: 100,
+            height: 100,
+          ),
+          Icon(Icons.verified),
+        ]),
       ),
     );
   }
