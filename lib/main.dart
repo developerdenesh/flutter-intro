@@ -17,6 +17,8 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: const Text('Hello Everyone'),
+          margin: const EdgeInsets.all(100),
+          padding: const EdgeInsets.all(10),
         ),
       ),
     );
