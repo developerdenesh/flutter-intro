@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           title: const Text('Learning flutter!'),
         ),
-        body: Container(
-          child: const Text('Hello Everyone'),
-          margin: const EdgeInsets.all(100),
-          padding: const EdgeInsets.all(10),
-        ),
+        body: Column(children: const [
+          Icon(Icons.backpack),
+          Icon(Icons.leaderboard),
+          Icon(Icons.person),
+        ]),
       ),
     );
   }
