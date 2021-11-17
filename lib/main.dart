@@ -15,14 +15,11 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           title: const Text('Learning flutter!'),
         ),
-        body: Stack(children: [
-          Container(
-            color: Colors.red,
-            width: 100,
-            height: 100,
-          ),
-          Icon(Icons.verified),
-        ]),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {print('pressed!');
+          },
+        ),
       ),
     );
   }
